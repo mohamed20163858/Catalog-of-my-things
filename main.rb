@@ -5,6 +5,7 @@ require './menu'
 def main
   number = 0
   menu = Menu.new
+  puts 'Welcome to Catlog of my things app!'
   # option = Options.new
   # l = Load.new
   # s = Save.new
