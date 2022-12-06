@@ -61,7 +61,6 @@
 - **Register new person either a student or a teacher**
 - **Register new book**
 - **Create a rental to track each book rented by person x**
-- **List all rentals by person x just by giving his ID to the App**
 - **Exit to quit the application**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
