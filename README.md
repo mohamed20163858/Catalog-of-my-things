@@ -115,7 +115,11 @@ the app is tested using Rspec library you can check the tests by openning your t
 - Twitter: [@omarwarraich1](https://twitter.com/omarwarraich1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/o-va/)
 
+👤 **Sonick Mumba**
 
+- GitHub: [@Sonickmumba](https://github.com/Sonickmumba/)
+- Twitter: [@sonickmumba](https://twitter.com/sonickmumba)
+- LinkedIn: [Sonick mumba](https://www.linkedin.com/in/sonickmumba/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
