@@ -22,5 +22,4 @@ class Save
     end
     File.write('labels.json', JSON.generate(labels))
   end
-
 end

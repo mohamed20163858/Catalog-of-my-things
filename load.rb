@@ -1,5 +1,5 @@
-require_relative './book.rb'
-require_relative './label.rb'
+require_relative './book'
+require_relative './label'
 class Load
   def load_books
     books = []
