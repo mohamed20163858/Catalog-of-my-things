@@ -37,12 +37,12 @@
 
 # 📖 [Catalog of my things] <a name="about-project"></a>
 
-> Build a school library ruby App to enable school libarians easy track the books inside the library, the registered students and teachers and the rental records beside tracking any rental happened by just providing the student or teacher ID.
+> Build a catalog of my things ruby App to enable users easy track the items like books, games, movies, and music albums inside their storeroom. this is done by listing all these items or simply add new items and save them in json file using the app.
 
  
 
 
-**[Catalog of my things]** is built using through following OOP styling paradigm I created classes for every given input entity like student , teacher, book, rental then i create assoction between them for example student and teacher has `many-to-many` relation ship with book so i created rental class to link these two classes together.
+**[Catalog of my things]** is built using through following OOP styling paradigm I created classes for every given input entity like book, game, movie, music album, label, source, genre, and author then i create assoction between them for example label and book has `one-to-many` relationship with book.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,13 +54,24 @@
 
 ### Key Features <a name="key-features"></a>
 
-> The school library ruby App  has the following features:-
+> The catalog of my things ruby App  has the following features:-
 
-- **List all books inside the library**
-- **List all people that has permission to enter the library**
-- **Register new person either a student or a teacher**
-- **Register new book**
-- **Create a rental to track each book rented by person x**
+- **List all books**
+- **List all music albums**
+- **List all movies**
+- **List of games**
+- **List all genres**
+- **List all labels**
+- **List all authors**
+- **List all sources**
+- **Add a book**
+- **Add a movie**
+- **Add a music album**
+- **Add a game**
+- **Add a genre**
+- **Add a label**
+- **Add an author**
+- **Add a source**
 - **Exit to quit the application**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -80,23 +91,21 @@ coming soon
 coming soon
 
 ### Setup
-You can download the page by clicking in the code green button and select Download ZIP or if you are a developer. You can get the https link or ssh link just copy it and use your favourite command line git interface and write this `git clone https://github.com/mohamed20163858/oop_school_library.git` if you use https or write `git clone git@github.com:mohamed20163858/oop_school_library.git` if you use ssh
+You can download the page by clicking in the code green button and select Download ZIP or if you are a developer. You can get the https link or ssh link just copy it and use your favourite command line git interface and write this `git clone https://github.com/mohamed20163858/Catalog-of-my-things.git` if you use https or write `git clone git@github.com:mohamed20163858/Catalog-of-my-things.git` if you use ssh
 
 ### Usage
 
 To run the project just open your terminal, then change the directory to the location of this repo using this command `cd file_path`, and finally run this command `ruby main.rb` or if you are using windows you can simply double click this file `main.rb`.
 
 Here is a screenshots of an example to teach you how to correctly use this App:-
-![image](https://user-images.githubusercontent.com/22921170/204107264-fefacb46-6a97-411f-87aa-a9de69c13d71.png)
-![image](https://user-images.githubusercontent.com/22921170/204107279-bce2ba7c-0767-4e3e-a0c6-098b0efa43f4.png)
-![image](https://user-images.githubusercontent.com/22921170/204107309-43526aad-a545-49a5-9302-4259bb61ed89.png)
+comming soon
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Tests 
 the app is tested using Rspec library you can check the tests by openning your terminal, then change the directory to the location of this repo using this command `cd file_path`, then run this command `gem install rspec`, finally run this command `rspec spec` or `rspec spec --format doc` for documented test results you should see a screen like that 
-![image](https://user-images.githubusercontent.com/22921170/205204379-de95a414-ed5f-4f4b-80a9-c3b2063c1eac.png)
+comming soon
 
 <!-- AUTHORS -->
 
