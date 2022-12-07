@@ -1,27 +1,25 @@
-# require './option'
-# require './save'
-# require './load'
-require './menu'
+require_relative './option'
+require_relative './save'
+require_relative './load'
+require_relative './menu'
 def main
   number = 0
   menu = Menu.new
   puts 'Welcome to Catlog of my things app!'
-  # option = Options.new
-  # l = Load.new
-  # s = Save.new
+  option = Options.new
+  l = Load.new
+  s = Save.new
   # load data
-  # option.app.people = File.exist?('people.json') ? l.load_people : []
-  # option.app.books = File.exist?('books.json') ? l.load_books : []
-  # option.app.rentals = File.exist?('rentals.json') ? l.load_rentals(option.app) : []
+  option.app.books = File.exist?('books.json') ? l.load_books : []
+  option.app.labels = File.exist?('labels.json') ? l.load_labels : []
   while number != '17'
     menu.display_options
     number = gets.chomp
-    # option.select_option(number)
+    option.select_option(number)
   end
   # save data
-  # s.save_people(option.app.people)
-  # s.save_books(option.app.books)
-  # s.save_rentals(option.app.rentals)
+  s.save_books(option.app.books)
+  s.save_labels(option.app.labels)
 end
 
 main
