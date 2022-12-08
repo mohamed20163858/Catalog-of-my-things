@@ -1,4 +1,5 @@
 require_relative '../book'
+
 describe Book do
   context 'test Book class behaviour' do
     before(:all) do
