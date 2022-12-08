@@ -1,8 +1,10 @@
 class Item
-  attr_accessor :genre, :author, :source, :label, :publish_date
+  attr_reader :id
+  attr_accessor :genre, :author, :source, :label, :publish_date, :name
 
   def initialize(id, publish_date, archived)
     @id = id
+    @name = name
     @publish_date = publish_date
     @archived = archived
   end
