@@ -1,6 +1,6 @@
 CREATE TABLE Book (
     id INT GENERATED ALWAYS AS IDENTITY,
-    game_id INT
+    game_id INT,
     publish_date DATE,
     archived BOOLEAN,
     publisher VARCHAR(255),
@@ -11,12 +11,14 @@ CREATE TABLE Book (
 CREATE TABLE Label (
     id INT GENERATED ALWAYS AS IDENTITY,
     book_id INT,
-    game_id INT
+    game_id INT,
+    music_album_id INT,
     title VARCHAR(255),
     color VARCHAR(50),
     PRIMARY KEY(id),
-    FOREIGN KEY(book_id) REFERENCES Book(id)
-    FOREIGN KEY(game_id) REFERENCES game(id)
+    FOREIGN KEY(book_id) REFERENCES Book(id),
+    FOREIGN KEY(game_id) REFERENCES Game(id),
+    FOREIGN KEY(music_album_id) REFERENCES Music_Album(id)
 );
 
 CREATE TABLE Game (
@@ -32,11 +34,13 @@ CREATE TABLE Author (
   id INT GENERATED ALWAYS AS IDENTITY,
   book_id INT,
   game_id INT,
+  music_album_id INT,
   first_name VARCHAR(200),
   last_name VARCHAR(200),
   PRIMARY KEY(id),
   FOREIGN KEY(book_id) REFERENCES Book(id),
-  FOREIGN KEY(game_id) REFERENCES Game(id)
+  FOREIGN KEY(game_id) REFERENCES Game(id),
+  FOREIGN KEY(music_album_id) REFERENCES Music_Album(id)
 );
 
 CREATE TABLE Music_Album (
