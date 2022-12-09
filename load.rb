@@ -80,8 +80,7 @@ class Load
     data = JSON.parse(File.read('genres.json'))
     data.each_with_index do |genre, i|
       name = genre['name']
-      item = genre['item']
-      genres.push(Genre.new(i, name, item))
+      genres.push(Genre.new(i, name))
     end
     genres
   end

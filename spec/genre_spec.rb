@@ -6,8 +6,7 @@ describe Genre do
       # arrange
       @id = 1
       @name = 'Rock'
-      @item = 'item'
-      @genre = Genre.new(@id, @name, @item)
+      @genre = Genre.new(@id, @name)
     end
     it 'test the existence of genre class' do
       expect(@genre).to be_instance_of(Genre) # assert

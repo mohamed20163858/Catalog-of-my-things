@@ -133,10 +133,8 @@ class App
   def add_genre
     print 'Genre name: '
     name = gets.chomp
-    print 'Genre items: '
-    items = gets.chomp
     index = @genres.length
-    genre = Genre.new(index, name, items)
+    genre = Genre.new(index, name)
     @genres.push(genre)
     puts 'Genre added successfully'
   end
@@ -155,7 +153,7 @@ class App
   def list_genres
     @genres.each do |genre|
       puts "Genre name: #{genre.name}"
-      puts "Genre items: #{genre.items}"
+
       puts
     end
   end
