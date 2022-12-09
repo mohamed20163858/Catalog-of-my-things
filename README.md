@@ -37,12 +37,10 @@
 
 # 📖 [Catalog of my things] <a name="about-project"></a>
 
-> Build a catalog of my things ruby App to enable users easy track the items like books, games, movies, and music albums inside their storeroom. this is done by listing all these items or simply add new items and save them in json file using the app.
-
- 
+> Build a catalog of my things ruby App to enable users easily track the items like books, games, movies, and music albums inside their storeroom. This is done by listing all these items or simply adding new items and saving them in json file using the app.
 
 
-**[Catalog of my things]** is built using through following OOP styling paradigm I created classes for every given input entity like book, game, movie, music album, label, source, genre, and author then i create assoction between them for example label and book has `one-to-many` relationship with book.
+**[Catalog of my things]** is built through following OOP styling paradigm. We created classes for every given input entity like book, game, movie, music album, label, source, genre, and author. Then we create assoction between them for example label and book has `one-to-many` relationship with book.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -98,7 +96,8 @@ You can download the page by clicking in the code green button and select Downlo
 To run the project just open your terminal, then change the directory to the location of this repo using this command `cd file_path`, and finally run this command `ruby main.rb` or if you are using windows you can simply double click this file `main.rb`.
 
 Here is a screenshots of an example to teach you how to correctly use this App:-
-comming soon
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
