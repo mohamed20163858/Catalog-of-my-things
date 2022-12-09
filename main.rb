@@ -7,6 +7,7 @@ require_relative './genre'
 
 # rubocop:disable Metrics/MethodLength
 # rubocop:disable Metrics/CyclomaticComplexity
+# rubocop:disable Metrics/AbcSize
 
 def main
   number = 0
@@ -39,5 +40,6 @@ end
 
 # rubocop:enable Metrics/MethodLength
 # rubocop:enable Metrics/CyclomaticComplexity
+# rubocop:enable Metrics/AbcSize
 
 main
