@@ -5,12 +5,8 @@ class MusicAlbum < Item
     attr_accessor :artist, :genre, :id, :on_spotify
     attr_reader :name
     
-    def initialize(name, artist, genre, on_spotify)
-        super(id, publish_date, archived)
-        @artist = artist
-        @genre = genre
-        @name = name
-        @id = Random.rand(1..1000)
+    def initialize(id, genre, author, source, label, publish_date, archived,  on_spotify)
+        super(id, genre, author, source, label, publish_date, archived)
         @on_spotify = on_spotify
     end
     
