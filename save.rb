@@ -59,6 +59,8 @@ class Save
       details['artist'] = album.artist
       details['genre'] = album.genre
       details['on_spotify'] = album.on_spotify
+      details['publish_date'] = album.publish_date
+      # details['archived'] = album.archived
       music_albums.push(details)
     end
     File.write('music_albums.json', JSON.generate(music_albums))

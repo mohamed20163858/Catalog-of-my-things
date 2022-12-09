@@ -66,7 +66,9 @@ class Load
       artist = album['artist']
       genre = album['genre']
       on_spotify = album['on_spotify']
-      holder = MusicAlbum.new(i, name, artist, genre, on_spotify)
+      publish_date = album['publish_date']
+      # archived = album['archived']
+      holder = MusicAlbum.new(i, name, artist, genre, publish_date, false, on_spotify)
       holder.move_to_archive
       albums.push(holder)
     end
