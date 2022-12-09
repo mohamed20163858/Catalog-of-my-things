@@ -97,14 +97,35 @@ To run the project just open your terminal, then change the directory to the loc
 
 Here is a screenshots of an example to teach you how to correctly use this App:-
 
+![ui1](https://user-images.githubusercontent.com/57269872/206802768-f9ae1fc2-25a8-4598-be23-c8ba7c5d7ead.png)
 
 
+![ui2](https://user-images.githubusercontent.com/57269872/206802780-b2b69763-9beb-4d54-bd57-c9c5bf018ec7.png)
+
+
+![ui3](https://user-images.githubusercontent.com/57269872/206802801-82d35092-d97f-4817-8088-cbd9d1309e8c.png)
+
+![ui4](https://user-images.githubusercontent.com/57269872/206802812-1bd3b47e-8ad9-45cf-aaaf-936bd1178145.png)
+
+
+![db3](https://user-images.githubusercontent.com/57269872/206801456-c003fe10-922f-452c-bba6-c5dff32cbb89.jpeg)
+
+![db2](https://user-images.githubusercontent.com/57269872/206801507-d8fd9e1d-4007-442e-88d8-f8bfd47074d7.jpeg)
+
+![db1](https://user-images.githubusercontent.com/57269872/206801529-bb8daca9-44f5-43eb-9ecd-641f306192f4.jpeg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Tests 
 the app is tested using Rspec library you can check the tests by openning your terminal, then change the directory to the location of this repo using this command `cd file_path`, then run this command `gem install rspec`, finally run this command `rspec spec` or `rspec spec --format doc` for documented test results you should see a screen like that 
-comming soon
+
+![test1](https://user-images.githubusercontent.com/57269872/206801328-3a77f3b0-0a03-4488-afae-8c528ce9fe78.jpeg)
+
+![test2](https://user-images.githubusercontent.com/57269872/206801452-64d0724e-5d60-4b97-b4ba-f30b6d76569d.jpeg)
+
+## Video Summary
+
+[Video](https://www.loom.com/share/2430bfc023674005ba1930c14fac834a)
 
 <!-- AUTHORS -->
 
@@ -156,7 +177,7 @@ If you like this project give it a thumb up :	👍 and share this projects with 
 
 - **[What is the name of database application that this app use to store its data?]**
 
-  - [Well this app donot use any database at all all the inforamtion you enter will be saved as json format for every object created to make this program work and these objects are rentals, books, and people]
+  - [Well this app donot use any database at all all the inforamtion you enter will be saved as json format for every object created to make this program work and these objects are books, games, and music_albums]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
