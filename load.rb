@@ -2,6 +2,8 @@ require_relative './book'
 require_relative './label'
 require_relative './game'
 require_relative './author'
+require_relative './music_album'
+require_relative './genre'
 
 class Load
   def load_books
@@ -54,5 +56,32 @@ class Load
       authors.push(Author.new(index, first_name, last_name))
     end
     authors
+  end
+
+  def load_music_albums
+    albums = []
+    data = JSON.parse(File.read('music_albums.json'))
+    data.each_with_index do |album, i|
+      name = album['name']
+      artist = album['artist']
+      genre = album['genre']
+      on_spotify = album['on_spotify']
+      publish_date = album['publish_date']
+      # archived = album['archived']
+      holder = MusicAlbum.new(i, name, artist, genre, publish_date, false, on_spotify)
+      holder.move_to_archive
+      albums.push(holder)
+    end
+    albums
+  end
+
+  def load_genres
+    genres = []
+    data = JSON.parse(File.read('genres.json'))
+    data.each_with_index do |genre, i|
+      name = genre['name']
+      genres.push(Genre.new(i, name))
+    end
+    genres
   end
 end

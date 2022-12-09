@@ -38,3 +38,23 @@ CREATE TABLE Author (
   FOREIGN KEY(book_id) REFERENCES Book(id),
   FOREIGN KEY(game_id) REFERENCES Game(id)
 );
+
+CREATE TABLE Music_Album (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  publish_date DATE,
+  archived BOOLEAN,
+  on_spotify BOOLEAN,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE Genre (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  book_id INT,
+  game_id INT,
+  music_album_id INT,
+  name VARCHAR(200),
+  PRIMARY KEY(id),
+  FOREIGN KEY(book_id) REFERENCES Book(id),
+  FOREIGN KEY(game_id) REFERENCES Game(id),
+  FOREIGN KEY(music_album_id) REFERENCES Music_Album(id)
+);
