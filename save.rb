@@ -51,7 +51,7 @@ class Save
   end
 
   def save_music_albums(data)
-    albums = []
+    music_albums = []
     data.each_with_index do |album, index|
       details = {}
       details['id'] = index
@@ -59,9 +59,9 @@ class Save
       details['artist'] = album.artist
       details['genre'] = album.genre
       details['on_spotify'] = album.on_spotify
-      albums.push(details)
+      music_albums.push(details)
     end
-    File.write('music_albums.json', JSON.generate(albums))
+    File.write('music_albums.json', JSON.generate(music_albums))
   end
 
   def save_genres(data)

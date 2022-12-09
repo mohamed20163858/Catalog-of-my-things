@@ -8,13 +8,15 @@ require 'json'
 require 'date'
 
 class App
-  attr_accessor :books, :labels, :games, :authors
+  attr_accessor :books, :labels, :games, :authors, :music_albums, :genres
 
   def initialize
     @books = []
     @labels = []
     @games = []
     @authors = []
+    @music_albums = []
+    @genres = []
   end
 
   def add_a_book
@@ -106,6 +108,55 @@ class App
   def list_authors
     @authors.each do |author|
       puts "Author: #{author.first_name} #{author.last_name}"
+    end
+  end
+
+  def add_music_album
+    print 'Album name: '
+    name = gets.chomp
+    print 'Album artist: '
+    artist = gets.chomp
+    print 'Album genre: '
+    genre = gets.chomp
+    print 'Album publish date: '
+    publish_date = Date.parse(gets.chomp)
+    print('Is it archived or not?(y/n)')
+    archived = check_answer
+    print 'Is the ablum on spotify? (Y/N): '
+    on_spotify = gets.chomp.downcase == 'y' || false
+    index = @music_albums.length
+    music_album = MusicAlbum.new(index, name, artist, genre, publish_date, archived, on_spotify)
+    @music_albums.push(music_album)
+    puts 'Music album added successfully'
+  end
+
+  def add_genre
+    print 'Genre name: '
+    name = gets.chomp
+    print 'Genre items: '
+    items = gets.chomp
+    index = @genres.length
+    genre = Genre.new(index, name, items)
+    @genres.push(genre)
+    puts 'Genre added successfully'
+  end
+
+  def list_music_albums
+    @music_albums.each do |music_album|
+      puts "Album name: #{music_album.name}"
+      puts "Album artist: #{music_album.author}"
+      puts "Album genre: #{music_album.genre}"
+      puts "Album publish date: #{music_album.publish_date}"
+      puts "Album on spotify: #{music_album.on_spotify}"
+      puts
+    end
+  end
+
+  def list_genres
+    @genres.each do |genre|
+      puts "Genre name: #{genre.name}"
+      puts "Genre items: #{genre.items}"
+      puts
     end
   end
 

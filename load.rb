@@ -66,7 +66,9 @@ class Load
       artist = album['artist']
       genre = album['genre']
       on_spotify = album['on_spotify']
-      albums.push(MusicAlbum.new(i, name, artist, genre, on_spotify))
+      holder = MusicAlbum.new(i, name, artist, genre, on_spotify)
+      holder.move_to_archive
+      albums.push(holder)
     end
     albums
   end
@@ -76,7 +78,8 @@ class Load
     data = JSON.parse(File.read('genres.json'))
     data.each_with_index do |genre, i|
       name = genre['name']
-      genres.push(Genre.new(i, name, []))
+      item = genre['item']
+      genres.push(Genre.new(i, name, item))
     end
     genres
   end
