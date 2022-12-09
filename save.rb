@@ -49,4 +49,31 @@ class Save
     end
     File.write('authors.json', JSON.generate(authors))
   end
+
+  def save_music_albums(data)
+    albums = []
+    data.each_with_index do |album, index|
+      details = {}
+      details['id'] = index
+      details['name'] = album.name
+      details['artist'] = album.artist
+      details['genre'] = album.genre
+      details['on_spotify'] = album.on_spotify
+      albums.push(details)
+    end
+    File.write('music_albums.json', JSON.generate(albums))
+  end
+
+  def save_items(data)
+    items = []
+    data.each_with_index do |item, index|
+      details = {}
+      details['id'] = index
+      details['name'] = item.name
+      details['publish_date'] = item.publish_date
+      details['archived'] = item.archived
+      items.push(details)
+    end
+    File.write('items.json', JSON.generate(items))
+  end
 end
