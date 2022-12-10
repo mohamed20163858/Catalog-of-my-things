@@ -125,7 +125,7 @@ the app is tested using Rspec library you can check the tests by openning your t
 
 ## Video Summary
 
-[Video](https://www.loom.com/share/2430bfc023674005ba1930c14fac834a)
+[Video](https://drive.google.com/file/d/1FCyIh46f0KEdUSm1awMzqEyroowfJHG1/view?usp=sharing)
 
 <!-- AUTHORS -->
 
