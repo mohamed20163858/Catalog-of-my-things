@@ -62,3 +62,9 @@ CREATE TABLE Genre (
   FOREIGN KEY(game_id) REFERENCES Game(id),
   FOREIGN KEY(music_album_id) REFERENCES Music_Album(id)
 );
+
+-- FK Indexes
+
+CREATE INDEX book_id_idx ON Label(book_id);
+CREATE INDEX game_id_idx ON Label(game_id);
+CREATE INDEX music_album_id_idx ON Label(music_album_id);
