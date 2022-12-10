@@ -68,3 +68,11 @@ CREATE TABLE Genre (
 CREATE INDEX book_id_idx ON Label(book_id);
 CREATE INDEX game_id_idx ON Label(game_id);
 CREATE INDEX music_album_id_idx ON Label(music_album_id);
+
+CREATE INDEX book_id_idx ON Author(book_id);
+CREATE INDEX game_id_idx ON Author(game_id);
+CREATE INDEX music_album_id_idx ON Author(music_album_id);
+
+CREATE INDEX book_id_idx ON Genre(book_id);
+CREATE INDEX game_id_idx ON Genre(game_id);
+CREATE INDEX music_album_id_idx ON Genre(music_album_id);
